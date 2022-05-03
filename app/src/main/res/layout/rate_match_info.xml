@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="@dimen/common_vertical_margin"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/next_match_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="5dp"
+        android:text="Rate your game and your teammates"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <LinearLayout
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/little_round_avatar_size"
+            android:layout_height="@dimen/little_round_avatar_size"
+            app:cardCornerRadius="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="@dimen/little_round_avatar_size"
+                android:layout_height="@dimen/little_round_avatar_size"
+                android:src="@drawable/test_ava"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/current_user_name"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/test_user_name"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/next_match_location"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/small_title"
+            android:text="@string/test_match_location" />
+
+        <TextView
+            android:id="@+id/next_match_sport"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/small_title"
+            android:text="@string/match_sport" />
+
+        <TextView
+            android:id="@+id/next_match_time"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/small_title"
+            android:text="@string/test_match_time" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
